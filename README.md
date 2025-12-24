@@ -1,13 +1,25 @@
 # 🚚 Data Engineering: Delivery Service Analytics Pipeline
 
-## 📋 Project Description
-This project implements a complete data engineering pipeline for a delivery service. It transforms raw delivery data into a normalized PostgreSQL database, orchestrates ETL with Apache Airflow, and builds analytical datamarts for business intelligence.
+delivery-project/
+├── airflow/
+│   ├── dags/
+│   │   ├── delivery_normalization.py
+│   │   └── delivery_datamarts.py
+│   ├── data/
+│   ├── Dockerfile
+│   ├── entrypoint.sh
+│   └── requirements.txt
+├── postgres/
+│   └── init_delivery_db.sql
+├── pgadmin/
+│   └── servers.json
+├── docker-compose.yaml
+├── .gitignore
+└── README.md
 
----
+## System Architecture
 
-## 🏗️ System Architecture
-
-### 📊 Data Flow
+### Data Flow
 
 ### 🗄️ Database Schema (3NF)
 **Core Tables:**
@@ -64,7 +76,7 @@ docker-compose up --build
 # 4. Access:
 # Airflow: http://localhost:8080 (admin/admin)
 # PgAdmin: http://localhost:5050 (delivery@admin.com/pgadmin_pass_123)
-
+```
 
 delivery-project/
 ├── airflow/
