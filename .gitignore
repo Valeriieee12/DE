@@ -1,0 +1,33 @@
+# Data files - НЕ добавляем в git
+airflow/data/deliveries.parquet
+airflow/data/*.parquet
+airflow/data/*.csv
+
+# Airflow системные папки
+airflow/logs/
+airflow/plugins/
+
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# Переменные окружения - НЕ добавляем!
+.env
+.env.*
+
+# IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
